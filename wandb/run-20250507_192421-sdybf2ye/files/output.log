@@ -1,0 +1,22 @@
+(4500, 13) (500, 13)
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+train_loss=-2.043, state pred rel l2 error: 2.546, cumulative reward pred abs error: 0.886
+train_loss=-2.728, state pred rel l2 error: 2.345, cumulative reward pred abs error: 0.870
+train_loss=-4.019, state pred rel l2 error: 1.856, cumulative reward pred abs error: 0.852
+train_loss=-4.121, state pred rel l2 error: 1.676, cumulative reward pred abs error: 0.836
+train_loss=-3.819, state pred rel l2 error: 1.690, cumulative reward pred abs error: 0.821
+train_loss=-3.455, state pred rel l2 error: 1.561, cumulative reward pred abs error: 0.806
+train_loss=-3.499, state pred rel l2 error: 1.570, cumulative reward pred abs error: 0.794
+train_loss=-3.602, state pred rel l2 error: 1.387, cumulative reward pred abs error: 0.783
+train_loss=-3.663, state pred rel l2 error: 1.451, cumulative reward pred abs error: 0.773
+train_loss=-3.780, state pred rel l2 error: 1.339, cumulative reward pred abs error: 0.761
+train_loss=-3.725, state pred rel l2 error: 1.586, cumulative reward pred abs error: 0.750
+train_loss=-4.184, state pred rel l2 error: 2.701, cumulative reward pred abs error: 0.734
+train_loss=-4.635, state pred rel l2 error: 3.134, cumulative reward pred abs error: 0.710
+train_loss=-6.236, state pred rel l2 error: 3.674, cumulative reward pred abs error: 0.687
+train_loss=-8.408, state pred rel l2 error: 7.281, cumulative reward pred abs error: 0.651
+train_loss=-55.445, state pred rel l2 error: 11.826, cumulative reward pred abs error: 0.601
+train_loss=-265.787, state pred rel l2 error: 23.558, cumulative reward pred abs error: 0.527
+train_loss=-6484.094, state pred rel l2 error: 50.486, cumulative reward pred abs error: 0.487
+train_loss=-29167.645, state pred rel l2 error: 111.467, cumulative reward pred abs error: 0.467
+train_loss=-217556.234, state pred rel l2 error: 269.554, cumulative reward pred abs error: 0.469

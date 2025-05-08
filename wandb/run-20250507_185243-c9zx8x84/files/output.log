@@ -1,0 +1,27 @@
+(400, 13) (50, 13)
+(50,) (50, 1)
+train_loss=-5.135, next state pred rel l2 error: 2.290, next state cumulative reward pred abs error: 0.871
+train_loss=-5.572, next state pred rel l2 error: 2.411, next state cumulative reward pred abs error: 0.833
+train_loss=-6.914, next state pred rel l2 error: 2.021, next state cumulative reward pred abs error: 0.777
+train_loss=-6.174, next state pred rel l2 error: 1.637, next state cumulative reward pred abs error: 0.724
+train_loss=-6.195, next state pred rel l2 error: 2.174, next state cumulative reward pred abs error: 0.676
+train_loss=-5.633, next state pred rel l2 error: 2.617, next state cumulative reward pred abs error: 0.615
+train_loss=-7.279, next state pred rel l2 error: 3.768, next state cumulative reward pred abs error: 0.545
+train_loss=-9.155, next state pred rel l2 error: 4.209, next state cumulative reward pred abs error: 0.445
+train_loss=-8.035, next state pred rel l2 error: 7.701, next state cumulative reward pred abs error: 0.238
+train_loss=-12.462, next state pred rel l2 error: 6.837, next state cumulative reward pred abs error: 0.216
+train_loss=-40.396, next state pred rel l2 error: 10.409, next state cumulative reward pred abs error: -0.062
+train_loss=-94.022, next state pred rel l2 error: 8.084, next state cumulative reward pred abs error: -0.042
+train_loss=-87.680, next state pred rel l2 error: 30.344, next state cumulative reward pred abs error: -0.760
+train_loss=-788.868, next state pred rel l2 error: 51.191, next state cumulative reward pred abs error: -0.828
+train_loss=-1654.188, next state pred rel l2 error: 60.214, next state cumulative reward pred abs error: -0.601
+train_loss=-14242.751, next state pred rel l2 error: 95.379, next state cumulative reward pred abs error: -0.308
+train_loss=-62317.715, next state pred rel l2 error: 173.558, next state cumulative reward pred abs error: 0.278
+train_loss=-87887.578, next state pred rel l2 error: 402.491, next state cumulative reward pred abs error: 0.378
+train_loss=-501537.906, next state pred rel l2 error: 389.614, next state cumulative reward pred abs error: 0.287
+train_loss=-688661.750, next state pred rel l2 error: 1080.906, next state cumulative reward pred abs error: -0.447
+train_loss=-22976082.000, next state pred rel l2 error: 1884.640, next state cumulative reward pred abs error: 1.316
+train_loss=-323271392.000, next state pred rel l2 error: 930.038, next state cumulative reward pred abs error: 0.603
+train_loss=-237660848.000, next state pred rel l2 error: 1788.786, next state cumulative reward pred abs error: 0.333
+train_loss=-2033674496.000, next state pred rel l2 error: 7550.204, next state cumulative reward pred abs error: 1.994
+train_loss=-1454137344.000, next state pred rel l2 error: 23114.590, next state cumulative reward pred abs error: -3.172

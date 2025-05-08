@@ -1,0 +1,7 @@
+{"time":"2025-05-07T19:24:21.90652093-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/matt/NSDE_ORL/wandb/run-20250507_192421-sdybf2ye/logs/debug-core.log"}
+{"time":"2025-05-07T19:24:22.11790149-06:00","level":"INFO","msg":"created new stream","id":"sdybf2ye"}
+{"time":"2025-05-07T19:24:22.11792796-06:00","level":"INFO","msg":"stream: started","id":"sdybf2ye"}
+{"time":"2025-05-07T19:24:22.11794034-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"sdybf2ye"}
+{"time":"2025-05-07T19:24:22.11796155-06:00","level":"INFO","msg":"sender: started","stream_id":"sdybf2ye"}
+{"time":"2025-05-07T19:24:22.1179986-06:00","level":"INFO","msg":"handler: started","stream_id":"sdybf2ye"}
+{"time":"2025-05-07T19:24:22.293929586-06:00","level":"INFO","msg":"Starting system monitor"}

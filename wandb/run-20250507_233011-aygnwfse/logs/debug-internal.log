@@ -1,0 +1,7 @@
+{"time":"2025-05-07T23:30:11.61406784-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/matt/NSDE_ORL/wandb/run-20250507_233011-aygnwfse/logs/debug-core.log"}
+{"time":"2025-05-07T23:30:11.825275492-06:00","level":"INFO","msg":"created new stream","id":"aygnwfse"}
+{"time":"2025-05-07T23:30:11.825326911-06:00","level":"INFO","msg":"stream: started","id":"aygnwfse"}
+{"time":"2025-05-07T23:30:11.825354851-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"aygnwfse"}
+{"time":"2025-05-07T23:30:11.825431931-06:00","level":"INFO","msg":"handler: started","stream_id":"aygnwfse"}
+{"time":"2025-05-07T23:30:11.825445491-06:00","level":"INFO","msg":"sender: started","stream_id":"aygnwfse"}
+{"time":"2025-05-07T23:30:12.050156307-06:00","level":"INFO","msg":"Starting system monitor"}

@@ -1,0 +1,7 @@
+{"time":"2025-05-07T18:58:31.577304589-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/matt/NSDE_ORL/wandb/run-20250507_185831-t10weswd/logs/debug-core.log"}
+{"time":"2025-05-07T18:58:31.790447832-06:00","level":"INFO","msg":"created new stream","id":"t10weswd"}
+{"time":"2025-05-07T18:58:31.790468262-06:00","level":"INFO","msg":"stream: started","id":"t10weswd"}
+{"time":"2025-05-07T18:58:31.790554762-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"t10weswd"}
+{"time":"2025-05-07T18:58:31.790563042-06:00","level":"INFO","msg":"handler: started","stream_id":"t10weswd"}
+{"time":"2025-05-07T18:58:31.790581572-06:00","level":"INFO","msg":"sender: started","stream_id":"t10weswd"}
+{"time":"2025-05-07T18:58:31.978409529-06:00","level":"INFO","msg":"Starting system monitor"}

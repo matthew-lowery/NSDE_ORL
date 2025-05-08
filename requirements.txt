@@ -1,0 +1,6 @@
+jax[cuda12]
+equinox
+gymnasium
+numpy
+optax
+diffrax

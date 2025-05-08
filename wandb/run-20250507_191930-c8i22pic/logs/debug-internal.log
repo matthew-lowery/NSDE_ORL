@@ -1,0 +1,7 @@
+{"time":"2025-05-07T19:19:30.058750786-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/matt/NSDE_ORL/wandb/run-20250507_191930-c8i22pic/logs/debug-core.log"}
+{"time":"2025-05-07T19:19:30.272841082-06:00","level":"INFO","msg":"created new stream","id":"c8i22pic"}
+{"time":"2025-05-07T19:19:30.272868161-06:00","level":"INFO","msg":"stream: started","id":"c8i22pic"}
+{"time":"2025-05-07T19:19:30.272882041-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"c8i22pic"}
+{"time":"2025-05-07T19:19:30.272900711-06:00","level":"INFO","msg":"sender: started","stream_id":"c8i22pic"}
+{"time":"2025-05-07T19:19:30.272941321-06:00","level":"INFO","msg":"handler: started","stream_id":"c8i22pic"}
+{"time":"2025-05-07T19:19:30.504049526-06:00","level":"INFO","msg":"Starting system monitor"}

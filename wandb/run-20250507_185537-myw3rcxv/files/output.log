@@ -1,0 +1,35 @@
+(400, 13) (50, 13)
+(50,) (50, 1)
+train_loss=-5.723, state pred rel l2 error: 2.398, cumulative reward pred abs error: 0.865
+train_loss=-4.059, state pred rel l2 error: 2.200, cumulative reward pred abs error: 0.825
+train_loss=-5.548, state pred rel l2 error: 1.633, cumulative reward pred abs error: 0.798
+train_loss=-5.140, state pred rel l2 error: 1.477, cumulative reward pred abs error: 0.778
+train_loss=-8.805, state pred rel l2 error: 1.278, cumulative reward pred abs error: 0.746
+train_loss=-7.549, state pred rel l2 error: 1.608, cumulative reward pred abs error: 0.723
+train_loss=-10.496, state pred rel l2 error: 2.417, cumulative reward pred abs error: 0.691
+train_loss=-10.164, state pred rel l2 error: 3.354, cumulative reward pred abs error: 0.597
+train_loss=-20.834, state pred rel l2 error: 7.903, cumulative reward pred abs error: 0.565
+train_loss=-82.481, state pred rel l2 error: 5.938, cumulative reward pred abs error: 0.529
+train_loss=-108.223, state pred rel l2 error: 15.989, cumulative reward pred abs error: 0.779
+train_loss=-502.000, state pred rel l2 error: 20.191, cumulative reward pred abs error: 0.951
+train_loss=-2399.275, state pred rel l2 error: 54.142, cumulative reward pred abs error: 1.287
+Traceback (most recent call last):
+  File "/home/matt/NSDE_ORL/nsde.py", line 322, in <module>
+  File "/home/matt/miniconda3/envs/npde/lib/python3.10/site-packages/equinox/_jit.py", line 275, in __call__
+    return self._call(False, args, kwargs)
+  File "/home/matt/miniconda3/envs/npde/lib/python3.10/site-packages/equinox/_module.py", line 1096, in __call__
+    return self.__func__(self.__self__, *args, **kwargs)
+  File "/home/matt/miniconda3/envs/npde/lib/python3.10/site-packages/equinox/_jit.py", line 270, in _call
+    return _postprocess(out)
+  File "/home/matt/miniconda3/envs/npde/lib/python3.10/site-packages/equinox/_jit.py", line 108, in _postprocess
+    return combine(dynamic_out, static_out.value)
+  File "/home/matt/miniconda3/envs/npde/lib/python3.10/site-packages/equinox/_filters.py", line 209, in combine
+    return jtu.tree_map(_combine, *pytrees, is_leaf=_is_leaf)
+  File "/home/matt/miniconda3/envs/npde/lib/python3.10/site-packages/jax/_src/tree_util.py", line 356, in tree_map
+    leaves, treedef = tree_flatten(tree, is_leaf)
+  File "/home/matt/miniconda3/envs/npde/lib/python3.10/site-packages/jax/_src/tree_util.py", line 78, in tree_flatten
+    return default_registry.flatten(tree, is_leaf)
+  File "/home/matt/miniconda3/envs/npde/lib/python3.10/site-packages/equinox/_filters.py", line 162, in _is_none
+    def _is_none(x):
+KeyboardInterrupt
+Exception ignored in atexit callback:

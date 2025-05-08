@@ -1,0 +1,7 @@
+{"time":"2025-05-07T18:55:37.819699071-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/matt/NSDE_ORL/wandb/run-20250507_185537-myw3rcxv/logs/debug-core.log"}
+{"time":"2025-05-07T18:55:38.034285867-06:00","level":"INFO","msg":"created new stream","id":"myw3rcxv"}
+{"time":"2025-05-07T18:55:38.034316717-06:00","level":"INFO","msg":"stream: started","id":"myw3rcxv"}
+{"time":"2025-05-07T18:55:38.034325757-06:00","level":"INFO","msg":"handler: started","stream_id":"myw3rcxv"}
+{"time":"2025-05-07T18:55:38.034355927-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"myw3rcxv"}
+{"time":"2025-05-07T18:55:38.034355677-06:00","level":"INFO","msg":"sender: started","stream_id":"myw3rcxv"}
+{"time":"2025-05-07T18:55:38.243384777-06:00","level":"INFO","msg":"Starting system monitor"}

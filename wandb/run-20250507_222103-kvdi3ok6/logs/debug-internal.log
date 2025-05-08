@@ -1,0 +1,15 @@
+{"time":"2025-05-07T22:21:03.018523067-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/matt/NSDE_ORL/wandb/run-20250507_222103-kvdi3ok6/logs/debug-core.log"}
+{"time":"2025-05-07T22:21:03.231915767-06:00","level":"INFO","msg":"created new stream","id":"kvdi3ok6"}
+{"time":"2025-05-07T22:21:03.231948087-06:00","level":"INFO","msg":"stream: started","id":"kvdi3ok6"}
+{"time":"2025-05-07T22:21:03.231958157-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"kvdi3ok6"}
+{"time":"2025-05-07T22:21:03.231992137-06:00","level":"INFO","msg":"handler: started","stream_id":"kvdi3ok6"}
+{"time":"2025-05-07T22:21:03.231995967-06:00","level":"INFO","msg":"sender: started","stream_id":"kvdi3ok6"}
+{"time":"2025-05-07T22:21:03.386586892-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-07T22:21:19.531828307-06:00","level":"INFO","msg":"stream: closing","id":"kvdi3ok6"}
+{"time":"2025-05-07T22:21:19.531848537-06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-07T22:21:19.531910057-06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-07T22:21:19.991239237-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-07T22:21:20.300512912-06:00","level":"INFO","msg":"handler: closed","stream_id":"kvdi3ok6"}
+{"time":"2025-05-07T22:21:20.300542912-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kvdi3ok6"}
+{"time":"2025-05-07T22:21:20.300580982-06:00","level":"INFO","msg":"sender: closed","stream_id":"kvdi3ok6"}
+{"time":"2025-05-07T22:21:20.300593742-06:00","level":"INFO","msg":"stream: closed","id":"kvdi3ok6"}

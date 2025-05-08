@@ -1,0 +1,6 @@
+(450, 13) (50, 13)
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+Traceback (most recent call last):
+  File "/home/matt/NSDE_ORL/train_nsde.py", line 362, in <module>
+    print(f'{train_loss=:.3f}, state pred rel l2 error: {test_state_err:.3f}, cumulative reward pred abs error: {test_rew_err:.3f}')
+NameError: name 'train_loss' is not defined

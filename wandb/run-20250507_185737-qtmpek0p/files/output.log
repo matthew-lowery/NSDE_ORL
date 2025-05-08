@@ -1,0 +1,12 @@
+(400, 13) (50, 13)
+train_loss=-3.526, state pred rel l2 error: 2.879, cumulative reward pred abs error: 0.901
+train_loss=-3.483, state pred rel l2 error: 2.779, cumulative reward pred abs error: 0.898
+train_loss=-5.134, state pred rel l2 error: 2.608, cumulative reward pred abs error: 0.895
+train_loss=-5.579, state pred rel l2 error: 2.161, cumulative reward pred abs error: 0.897
+train_loss=-5.398, state pred rel l2 error: 2.555, cumulative reward pred abs error: 0.890
+train_loss=-5.673, state pred rel l2 error: 2.300, cumulative reward pred abs error: 0.887
+train_loss=-6.504, state pred rel l2 error: 1.886, cumulative reward pred abs error: 0.882
+train_loss=-6.481, state pred rel l2 error: 2.187, cumulative reward pred abs error: 0.886
+train_loss=-6.181, state pred rel l2 error: 2.219, cumulative reward pred abs error: 0.887
+train_loss=-6.615, state pred rel l2 error: 2.135, cumulative reward pred abs error: 0.869
+train_loss=-6.611, state pred rel l2 error: 2.119, cumulative reward pred abs error: 0.879

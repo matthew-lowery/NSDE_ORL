@@ -1,0 +1,33 @@
+(400, 13) (100, 13)
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan
+train_loss=nan, state pred rel l2 error: nan, cumulative reward pred abs error: nan

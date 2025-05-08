@@ -1,0 +1,6 @@
+(450, 13) (50, 13)
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+Traceback (most recent call last):
+  File "/home/matt/NSDE_ORL/train_nsde.py", line 374, in <module>
+    wandb.log({"Loss data term": train_loss,
+NameError: name 'train_loss' is not defined
