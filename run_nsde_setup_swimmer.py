@@ -8,7 +8,7 @@ from optax import adam
 
 # data_cleaned.shape=(99900, 22), action_dim=2, state_dim=8, columns ordered as: action + state + state' + rew_cum + t + rew_cum' + t'
 
-state_dim, action_dim = 8, 2 ### for pendulum 
+state_dim, action_dim = 8, 2 
 state_pos_dim = state_dim // 2 ### equal number of position dims in state vector as in velocity dims
 state_vel_dim = state_pos_dim
 
