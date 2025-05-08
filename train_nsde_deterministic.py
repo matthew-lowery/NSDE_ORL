@@ -7,7 +7,10 @@ import diffrax
 from optax import adam, adamw
 
 ### not the best code practice, but sets variables including data
-from run_nsde_setup import *
+from run_nsde_setup_pend import *
+# from run_nsde_setup_swimmer import *
+
+
 import wandb
 
 
@@ -329,6 +332,7 @@ def eval_step(model, batch, key):
 epochs = 10000
 ntrain, ntest = 400, 100
 data = np.load('random_policy_inverted_pendulum_563.npz')
+# data = np.load('random_policy_swimmer_99900.npz')
 data = data['data_clean']
 data = jr.permutation(key, data)
 train, test = data[:ntrain], data[ntrain:ntrain+ntest]

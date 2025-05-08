@@ -6,7 +6,6 @@ import numpy as np
 import diffrax
 from optax import adam, adamw
 
-### not the best code practice, but sets variables including data
 # from run_nsde_setup_swimmer import *
 from run_nsde_setup_pend import *
 
@@ -17,7 +16,13 @@ wandb.init()
 
 key = jr.PRNGKey(0)
 
-class DriftTerm(eqx.Module):
+
+###########################################################################################################################
+###### EQUATION 8 PAGE 7 #########################################################################################################
+
+#  f(s,a) dt--> [s_vel, G(s_vel) @ a + H(s) @ s_vel] + f_res
+
+class DriftTerm(eqx.Module): 
     G: eqx.Module
     H: eqx.Module
     f_rew: eqx.Module
@@ -26,6 +31,8 @@ class DriftTerm(eqx.Module):
 
     def __init__(self, *, key):
         keys = jr.split(key, 4)
+
+        ### sub-models
         self.G = lambda s_vel: eqx.nn.MLP(in_size=G_input_dim,
                             out_size=G_out_dim,
                             width_size=G_latent_dim,
@@ -58,7 +65,7 @@ class DriftTerm(eqx.Module):
                             key=keys[2]
                             )
 
-    #  f(s,a) dt--> [s_vel, G(s_vel) @ a + H(s) @ s_vel] + f_res
+    
     def __call__(self, t, y, args):
         action = args ### action_dim,
         s_pos = y[:state_pos_dim]
@@ -80,9 +87,11 @@ class DriftTerm(eqx.Module):
         out = jnp.concatenate((f,f_rew))
         return out
 
+###########################################################################################################################
+###### EQUATION 5 PAGE 6 #########################################################################################################
 
-#  ( sig(s,a) + h(eta(s,a)) ) * dW
 
+#  ( sig(s,a) + h(eta(s,a)) ) * dW 
 class DiffusionTerm(eqx.Module):
     eta: eqx.Module
     h_W: jax.Array
@@ -158,15 +167,19 @@ class NeuralSDE(eqx.Module):
         solver = diffrax.ReversibleHeun()
         saveat = diffrax.SaveAt(t0=True, t1=True)
 
+        ### solve for sampling
         sol = diffrax.diffeqsolve(vf_terms, solver, t0=t0, t1=t1, dt0=0.1, y0=y0, args=args, saveat=saveat)
         return sol.ys[-1]
     
 
 model = NeuralSDE(key=key)
 
-### loss terms, written for one s_t, a_t pair, save for L_mu, which is written for a batch
+###########################################################################################################################
+###### ALL LOSS TERMS #########################################################################################################
 
-## lambda is 10^-4
+# loss terms, written for one s_t, a_t pair, save for L_mu, which is written for a batch
+
+### EQUATION 4, page 6
 def L_grad(model, state, action):
     s_action = jnp.concatenate((state, action))
     eta_grad = jax.jacfwd(model.diffusion.eta)(s_action).squeeze()
@@ -198,14 +211,14 @@ def L_sc(model, state, action, key, radius=0.1, num_samples=20):
     out = jnp.where(convexity_constraints >= 0, 0, convexity_constraints**2)
     return out.sum()
 
-
 ### EQUATION 3, page 6. lambda = 1
 def L_mu(model, state_batch, action_batch):
     s_action_batch = jnp.concatenate((state_batch, action_batch), axis=-1) ### batch_size, s_dim + action_dim
     mus = eqx.filter_vmap(model.L_mu)(s_action_batch)
     return (1/mus).sum()
 
-#### assume one sample as the paper mentions in page 6, equation 6 
+
+#### Assume calculation is done with 1 sample as the paper mentions in page 6, equation 6 
 def L_data(model, state, state_next, action, cum_r, cum_r_next, t0, t1, key):
     #### model digests state and current cumulative reward
     state_r = jnp.concatenate((state,cum_r))
@@ -263,8 +276,9 @@ def cyclical_cosine_annealing(
 opt = adamw(1e-4)
 opt_state = opt.init(eqx.filter(model, eqx.is_array))
 
-batch_split = jnp.cumsum(jnp.array([action_dim,state_dim,state_dim,1,1,1,1,]))[:-1].tolist()
+batch_split = jnp.cumsum(jnp.array([action_dim,state_dim,state_dim,1,1,1,1,]))[:-1].tolist() ### convenience for splitting the data array batcj
 
+## LOSS TERM COEFFICIENTS
 lamb_data, lamb_sc, lamb_grad, lamb_mu = 1.,1.,1e-4,0.005
 
 @eqx.filter_jit
@@ -299,6 +313,7 @@ def train_step(model, opt_state, batch, key):
     return model, opt_state, loss, individal_losses
 
 
+### EVALUATE MAE of model's predicted cumulative reward, and Mean REl L2 error of model's predicted next state
 @eqx.filter_jit
 def eval_step(model, batch, key):
     action_b, state_b, state_next_b, cum_r_b, t0_b, cum_r_next_b, t1_b = jnp.split(batch, batch_split, axis=-1)
@@ -316,6 +331,8 @@ def eval_step(model, batch, key):
 
             state_err_rel_l2 = jnp.linalg.norm(state_next - state_next_pred_sample) / jnp.linalg.norm(state_next)
             reward_err = jnp.abs(cum_r_next - cum_r_next_pred)
+
+
             return state_err_rel_l2, reward_err
 
         return jax.vmap(one, in_axes=(0,0,0,0,0,0,0,None))(state_b, state_next_b, action_b, cum_r_b, cum_r_next_b, t0_b, t1_b, key)
@@ -350,7 +367,7 @@ def get_train_batch(
     train_b = jax.lax.dynamic_slice_in_dim(tr,i * batch_size, batch_size)
     return train_b
 
-
+### train
 
 for epoch in range(epochs):
     key,epoch_key = jr.split(key)

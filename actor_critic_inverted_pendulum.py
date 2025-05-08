@@ -53,7 +53,7 @@ def sample_action(actor, state, key):
     return action_sample, (action_mu, std)
 
 
-episodes = 50
+episodes = 1000
 for episode in range(episodes):
 
     state, _ = env.reset()
